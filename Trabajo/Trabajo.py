@@ -81,3 +81,15 @@ class CuentaBancaria:
             print("Depósito exitoso! Tu nuevo balance es:", self.balance)
         else:
             print("El monto a depositar debe ser mayor a cero.")
+
+    def retirar(self, monto):
+        if monto > 0:
+            if monto <= self.balance:
+                self.balance -= monto
+                print("Retiro exitoso! Tu nuevo balance es:",self.balance)
+            else:
+                print("No tienes suficiente balance para este retiro.")
+        else:
+            print("El monto a retirar debe ser mayor a cero.")
+
+
