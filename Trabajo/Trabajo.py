@@ -52,4 +52,17 @@ class Circulo:
     def calcular_area(self):
         return math.pi * (self.radio **2)
 
+    def calcular_perimetro(self):
+        return 2 * math.pi * self.radio
+
+    def punto_pertenece(self, punto):
+        distancia = math.hypot(self.centro.x - punto.x, self.centro.y - punto.y)
+        return distancia <= self.radio
+
+class Carta:
+    def __init__(self, valor, pinta):
+        self.valor = valor
+        self.pinta = pinta
+
+    PINTAS = ('Diamantes', 'Corazones', 'Treboles', 'Pintas')
 
