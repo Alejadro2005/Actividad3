@@ -92,4 +92,9 @@ class CuentaBancaria:
         else:
             print("El monto a retirar debe ser mayor a cero.")
 
+    def aplicar_cuota_manejo(self):
+        cuota = self.balance * 0.02
+        self.balance -= cuota
+        print("Se ha aplicado una cuota de manejo del 2%. Tu nuevo balance es:",self.balance)
+
 
