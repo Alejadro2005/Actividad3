@@ -43,3 +43,13 @@ class Rectangulo:
         largo = abs(self.esquina1.x - self.esquina2.x)
         ancho = abs(self.esquina1.y - self.esquina2.y)
         return largo == ancho
+
+class Circulo:
+    def __init__(self,centro, radio):
+        self.centro = centro
+        self.radio = radio
+
+    def calcular_area(self):
+        return math.pi * (self.radio **2)
+
+
