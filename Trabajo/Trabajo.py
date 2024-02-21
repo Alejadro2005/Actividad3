@@ -75,3 +75,9 @@ class CuentaBancaria:
         self.propietarios = propietarios
         self.balance = balance
 
+    def depositar(self, monto):
+        if monto > 0:
+            self.balance += monto
+            print("Depósito exitoso! Tu nuevo balance es:", self.balance)
+        else:
+            print("El monto a depositar debe ser mayor a cero.")
