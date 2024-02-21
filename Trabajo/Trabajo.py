@@ -97,4 +97,10 @@ class CuentaBancaria:
         self.balance -= cuota
         print("Se ha aplicado una cuota de manejo del 2%. Tu nuevo balance es:",self.balance)
 
+    def mostrar_detalles(self):
+        print("Número de cuenta:",self.numero_cuenta)
+        print("Propietarios:",self.propietarios)
+        print("Balance:",self.balance)
+
+
 
