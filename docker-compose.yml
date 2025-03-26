@@ -1,0 +1,6 @@
+# docker-compose.yml
+version: '3'
+services:
+  app:
+    image: alejandroc2005/actividad3-app:latest  
+    container_name: actividad3-app
